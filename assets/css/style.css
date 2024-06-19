@@ -1,0 +1,166 @@
+/* Cores */
+:root {
+    --flame: #d36135ff;
+    --bistre: #2b2118ff;
+    --vanilla: #ece4b7ff;
+    --fawn: #e6aa68ff;
+    --black: #02020bff;
+
+    --flame-hsl: hsla(17, 64%, 52%, 1);
+    --bistre-hsl: hsla(28, 28%, 13%, 1);
+    --vanilla-hsl: hsla(51, 58%, 82%, 1);
+    --fawn-hsl: hsla(31, 72%, 65%, 1);
+    --black-hsl: hsla(240, 69%, 3%, 1);
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--vanilla);
+    color: var(--black);
+}
+
+/* Menu */
+.header {
+    background-color: var(--flame);
+    padding: 10px 0;
+    text-align: center;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+    font-size: 25px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: var(--vanilla);
+}
+
+#menu li a:hover {
+    color: var(--bistre);
+}
+
+/* Centro e container */
+.center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh-300 {
+    width: 300px;
+    height: 300px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--bistre);
+    color: var(--vanilla);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #menu li {
+        display: block;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .wh-300 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #menu li {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .p-30 {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    p, ul li {
+        font-size: 16px;
+    }
+}
+
+
+
+/* 
+:root { ... }: Define variáveis de cores CSS para uso no restante do estilo.
+
+body { ... }: Define estilos básicos para o corpo da página, como a fonte, cor de fundo, margem e padding.
+
+.header { ... }: Define o estilo para o cabeçalho, incluindo cor de fundo, padding e alinhamento de texto.
+
+#menu { ... }: Remove as marcações padrão da lista.
+
+#menu li { ... }: Exibe os itens do menu inline, com margem entre eles.
+
+#menu li a { ... }: Define estilo para os links do menu, incluindo cor e tamanho da fonte.
+
+#menu li a:hover { ... }: Define o estilo dos links quando o cursor está sobre eles.
+
+.center { ... }: Define o alinhamento de texto centralizado.
+
+.container { ... }: Define um contêiner flexível, com direção da coluna e centralização dos itens.
+
+.p-30 { ... }: Define padding de 30px.
+
+.br-50 { ... }: Define bordas arredondadas.
+
+.wh-300 { ... }: Define largura e altura de 300px.
+
+footer { ... }: Define estilo para o rodapé, incluindo cor de fundo, cor do texto, alinhamento, padding, posição fixa e largura.
+
+@media (min-width: 768px) { ... }: Define estilos para telas maiores que 768px (como tablets e desktops).
+
+.container { flex-direction: row; }: Altera a direção do contêiner flexível para linha em telas maiores.
+
+.container > div { flex: 1; }: Faz os divs internos ocuparem espaço igual no contêiner em telas maiores.
+
+*/

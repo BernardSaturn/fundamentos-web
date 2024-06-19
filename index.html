@@ -3,52 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
+    <title>Comandos Git</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
+    <div class="header">
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
 
-    <h1>Meu Perfil</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delen
-        iti dolores qui excepturi odit harum cumque placeat maxime pariatur 
-        dicta corrupti quo quaerat vero accusantium quasi optio blanditiis, 
-        non vitae?
-    </p>
+    <h1 class="center">Comandos Git Mais Usados</h1>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delen
-        iti dolores qui excepturi odit harum cumque placeat maxime pariatur 
-        dicta corrupti quo quaerat vero accusantium quasi optio blanditiis, 
-        non vitae?
-    </p>
+    <div class="container">
+        <div>
+            <img class="br-50 wh-300 p-30" src="assets/img/git.png" alt="Logo do Git" height="300" width="350">
+        </div>
+        <div class="p-30">
+            <h2>Comandos Git Principais</h2>
+            <p class="center">
+                O Git é uma ferramenta essencial para qualquer desenvolvedor, pois permite controle de versão eficiente e colaboração entre programadores. Aqui estão os 12 comandos mais usados, cada um com uma breve descrição:
+            </p>
+            <ul>
+                <li><strong>git init</strong>: Inicializa um novo repositório Git no diretório atual.</li>
+                <li><strong>git clone</strong>: Clona um repositório Git existente para o diretório atual.</li>
+                <li><strong>git add</strong>: Adiciona arquivos ao stage para o próximo commit.</li>
+                <li><strong>git commit</strong>: Salva as alterações no repositório local com uma mensagem descritiva.</li>
+                <li><strong>git status</strong>: Mostra o estado atual do repositório, incluindo quais arquivos foram modificados ou adicionados.</li>
+                <li><strong>git branch</strong>: Lista, cria ou exclui branches (ramificações).</li>
+                <li><strong>git checkout</strong>: Muda para um branch específico ou cria um novo branch e muda para ele.</li>
+                <li><strong>git merge</strong>: Mescla alterações de uma branch para outra.</li>
+                <li><strong>git rm</strong>: Remove arquivos do Git e para de monitorá-los.</li>
+                <li><strong>git stash</strong>: Salva alterações temporárias fora do branch atual para aplicar mais tarde.</li>
+                <li><strong>git log</strong>: Exibe o histórico de commits.</li>
+                <li><strong>git push</strong>: Envia commits do repositório local para o repositório remoto.</li>
+            </ul>
+            <p class="center">
+                Cada comando tem sua função específica no fluxo de trabalho do Git, facilitando a gestão de projetos e a colaboração entre desenvolvedores.
+            </p>
+        </div>
+    </div>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delen
-        iti dolores qui excepturi odit harum cumque placeat maxime pariatur 
-        dicta corrupti quo quaerat vero accusantium quasi optio blanditiis, 
-        non vitae?
-    </p>
-
-    <img src="assets/img/rusbe.webp" alt="Foto do criador desse conteúdo">
-
-    <h2>Dribles Neymar</h2>
-
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/wp1ZltRNdJs?si=_k4CM7tst4MI2oxc" title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
-
+    <footer>
+        <br>
+        <p>&copy; 2024 - Bernardo Henrique Carvalho. <br> <br>
+            Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
+
+
+
+<!-- 
+Explicação:
+
+<!DOCTYPE html>: Define o tipo de documento, informando ao navegador que este é um documento HTML5.
+
+<html lang="pt-br">: Inicia o documento HTML, especificando que o idioma do conteúdo é português do Brasil.
+
+<head>: Contém metadados sobre o documento, como título e links para recursos externos.
+
+    <meta charset="UTF-8">: Define a codificação de caracteres como UTF-8.
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">: Faz o layout responder ao tamanho da tela do dispositivo, garantindo uma boa aparência em dispositivos móveis.
+
+    <title>Comandos Git</title>: Define o título da página, que aparece na aba do navegador.
+
+    <link rel="stylesheet" href="assets/css/style.css">: Link para o arquivo CSS externo, que contém os estilos da página.
+
+    <body>: Inicia o corpo do documento, onde o conteúdo visível da página é colocado.
+
+        <div class="header">: Cria um contêiner para o cabeçalho da página, incluindo o menu de navegação.
+
+            <ul id="menu">: Inicia uma lista não ordenada para o menu.
+
+                <li><a href="index.html">Home</a></li>: Cria um item de lista com um link para a página inicial.
+
+                <li><a href="contato.html">Contato</a></li>: Cria um item de lista com um link para a página de contato.
+
+            </ul></div>: Fecha a lista e o contêiner do cabeçalho.
+
+            <h1 class="center">Comandos Git Mais Usados</h1>: Adiciona um título de nível 1 com uma classe CSS para centralização.
+
+            <div class="container">: Inicia um contêiner para o conteúdo principal.
+
+                <div><img class="br-50 wh-300 p-30" src="assets/img/git.png" alt="Logo do Git" height="300" width="350"></div>: Adiciona uma imagem com classes CSS para bordas arredondadas, largura/altura e padding.
+
+                <div class="p-30">: Inicia um contêiner para o texto com padding.
+
+                    <h2>Comandos Git Principais</h2>: Adiciona um título de nível 2.
+
+                    <p class="center">: Adiciona um parágrafo com uma classe CSS para centralização.
+
+                        <ul>: Inicia uma lista não ordenada.
+
+                            <li><strong>git init</strong>: Inicializa um novo repositório Git no diretório 
+                            atual.</li>: Cria um item de lista com descrição de comando.
+
+                            Repete os itens de lista para cada comando Git.
+
+
+                        </ul>: Fecha a lista.
+
+                        <p class="center">: Adiciona um parágrafo com uma classe CSS para centralização.
+
+                        </p></div></div>: Fecha os parágrafos e os contêineres.
+
+                        <footer>: Inicia o rodapé da página.
+
+                            <p>&copy; 2024 - Seu Nome. Todos os direitos reservados.</p>: Adiciona texto de copyright.
+
+                        </footer></body></html>: Fecha o rodapé, corpo e documento HTML. --> 
